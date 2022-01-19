@@ -5,4 +5,5 @@
     - name: Set fact
       set_fact:
         custom_fact: "Hola caracola"
+        cacheable: yes
       
