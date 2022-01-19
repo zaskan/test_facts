@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  tasks:
+    - name: Set fact
+      set_fact:
+        custom_fact: "Hola caracola"
+      
