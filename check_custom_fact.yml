@@ -2,6 +2,12 @@
 - hosts: localhost
   gather_facts: no
   tasks:
+    - shell: export
+      register: output
+      
+    - debug:
+        msg: "{{ output }}"
+      
     - name: Print fact
       debug:
         msg: "{{ ansible_facts.custom_fact }}"
