@@ -5,4 +5,6 @@
     - name: Print fact
       debug:
         msg: "{{ ansible_all_ipv4_addresses }}"
+    - name: Execute facter no arguments
+      community.general.facter:
       
