@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   gather_facts: no
   tasks:
     - name: Clear gathered facts from all currently targeted hosts  
